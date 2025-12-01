@@ -2,10 +2,30 @@ package me.velyn.adventofcode.y2025;
 
 import java.io.*;
 import java.nio.file.*;
+import java.util.concurrent.*;
 
 import org.apache.commons.lang3.math.*;
 
+import picocli.*;
+import picocli.CommandLine.*;
+
+@Command(name = "day1")
 public class Day1 implements Puzzle2025<Integer, Integer> {
+
+    @Option(names = {"-f", "--file"},
+            defaultValue = "etc/inputs/day1.example.txt")
+    private Path inputFile;
+
+    @Option(names = {"-v", "--verbose"})
+    private boolean verbose;
+
+    @Override
+    public Integer call() throws Exception {
+        part1(inputFile, verbose);
+        System.out.println();
+        part2(inputFile, verbose);
+        return 0;
+    }
 
     @Override
     public Integer part1(Path input, boolean verbose) throws IOException {

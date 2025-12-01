@@ -40,3 +40,4 @@ build/
 
 etc/inputs/**/*.txt
 !etc/inputs/**/*.example.txt
+dependency-reduced-pom.xml

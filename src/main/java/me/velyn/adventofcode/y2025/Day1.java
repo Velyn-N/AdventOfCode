@@ -13,7 +13,7 @@ import picocli.CommandLine.*;
 public class Day1 implements Puzzle2025<Integer, Integer> {
 
     @Option(names = {"-f", "--file"},
-            defaultValue = "etc/inputs/day1.example.txt")
+            defaultValue = "etc/inputs/2025/day1.example.txt")
     private Path inputFile;
 
     @Option(names = {"-v", "--verbose"})

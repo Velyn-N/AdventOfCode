@@ -6,7 +6,9 @@ import picocli.CommandLine.*;
         name = "2025",
         subcommands = {
                 Day1.class,
-                Day2.class
+                Day2.class,
+                Day3.class,
+                Day4.class
         }
 )
 public class CliCommand2025 {

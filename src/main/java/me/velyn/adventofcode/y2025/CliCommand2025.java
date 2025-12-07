@@ -10,7 +10,8 @@ import picocli.CommandLine.*;
                 Day3.class,
                 Day4.class,
                 Day5.class,
-                Day6.class
+                Day6.class,
+                Day7.class,
         }
 )
 public class CliCommand2025 {
